@@ -1,0 +1,54 @@
+#about{
+    width: 70%;
+    margin:auto;
+    padding-top:30rem;
+    min-height:80vh;
+    .about-container{
+        @include flex (center,center,row);
+        flex-wrap: wrap;
+        min-height:30vh;
+        .about-info{
+            flex:2 1 30rem;
+            h2{
+                font-size: $topic-header;
+                color: white;
+            }
+            p{
+                font-size: $text;
+                color: $gray-text;
+                margin:2rem 0rem;
+            }
+            .about-links{
+                margin:5rem 0rem;
+                .resume-link{
+                    color:white;
+                    font-size: $text;
+                    border: 4px solid $blue-highlight;
+                    padding:1rem 4rem;
+                    border-radius: 10px;
+                }
+                .resume-link:hover{
+                    border:4px solid #0b5b61;
+                }
+                a{
+                    color: $gray-text;
+                    font-size: 3rem;
+                    margin-right: 2rem;
+                }
+
+                a:hover{
+                    color:white;
+                    transition: all 0.2s ease-in;
+                }
+            }
+        }
+        .about-img{
+            flex: 1 1 20rem;
+            img{
+                width:100%;
+                height:10%;
+                object-fit: cover;
+            }
+        }
+    }
+}

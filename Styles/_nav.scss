@@ -1,0 +1,31 @@
+.main-head{
+    background: #121212;
+    min-height: 10vh;
+    @include flex(center,center,row);
+    color: white;
+    nav{
+        width:90%;
+        margin:auto;
+        @include flex(center,space-between,row);
+        .logo-name{
+            h2{
+                font-size: $text;
+            }
+        }
+        ul{
+            @include flex(center,center,row);
+            li{
+                
+                a{font-size:$text;
+                    color:white;
+                    margin: 0rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile nav */
+.mobile-nav{
+    display: none;
+}

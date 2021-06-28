@@ -1,0 +1,7 @@
+footer{
+    @include flex(center,center,row);
+    min-height:20vh;
+    border-top: 1px solid #565656;
+    font-size: $text;
+    color:$gray-text;
+}
