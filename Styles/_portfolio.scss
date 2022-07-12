@@ -21,6 +21,215 @@
         }
     }
 
+    //Experience Grid Section
+    .grid-experience{
+        width:70%;
+        margin: auto;
+        padding-top:5rem;
+        padding-bottom: 10rem;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        font-size: 3rem;
+        color: white;
+        .exp-grid{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hoverInfo{
+                @include flex(center,center,column);
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                button{
+                    border: none;
+                    padding: 1.2rem 1.9rem;
+                    font-size: 1.8rem;
+                    margin-top: 1.5rem;
+                    border-radius: 50px;
+                }
+                button:hover{
+                    cursor: pointer;
+                }
+
+
+
+                .modalContainer{
+                    background: rgba(0, 0, 0, 0.904);
+                    height: 100vh;
+                    width: 100%;
+                    margin: auto;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    opacity: 0;
+                    pointer-events: none;
+                    .close{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        i{
+                            position: absolute;
+                            bottom:10%;
+                            right: 27%;
+                            z-index: 555;
+                            cursor: pointer;
+                            color: white;
+                        }
+                    }
+                    .modal{
+                        margin-top: 10%;
+                        background: #121212;
+                        transform: translatey(10%);
+                        height: 85vh;
+                        width: 50%;
+                        margin: auto;
+                        @include flex(center,space-between,column);
+                        color:white;
+                        .expr-info, .expr-link{
+                            @include flex(flex-start, flex-start, column);
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                        .expr-info{
+                            padding-top: 1rem;
+                            .sub-title{
+                                color: #525252;
+                                text-transform: uppercase;
+                                font-size: 2.5rem;
+                            }
+                            .expr-descrip{
+                                font-size: 2rem;
+                                padding-top: 2rem;
+                                border-top: 1px solid gray;
+                            }
+                        }
+                        .expr-link{
+                            .client-link{
+                                border:4px solid $blue-highlight;
+                                width:27%;
+                                margin: 3rem 0rem;
+                                padding:0.7rem;
+                                border-radius:50px;
+                                color: white;
+                                text-align: center;
+                            }
+                            .client-link:hover{
+                                border: 4px solid #0b5b61;
+                                transition: all 0.2s ease-in;
+                            }
+                        }
+                    }
+                }
+
+                .show{
+                    opacity: 1;
+                    pointer-events: all;
+                }
+
+                
+            }
+            .hoverInfo:hover{
+                opacity: 1;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .exp-grid-one{
+            grid-column: 1/2;
+            .hoverInfo{
+                button{
+                    background: #C87C0A;
+                    color: white;
+                }
+            }
+        }
+        .exp-grid-two{
+            grid-column: 2/3;
+            .hoverInfo{
+                button{
+                    background-color: #f8ad1a;
+                    color: white;
+                }
+            }
+        }
+        .exp-grid-three{
+            grid-column: 3/4;
+            .hoverInfo{
+                button{
+                    background-color: #001c54;
+                    color: white;
+                }
+            }
+        }
+        .exp-grid-four{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            .hoverInfo{
+                button{
+                    background-color: #383531;
+                    color: white;
+                }
+            }
+        }
+        .exp-grid-five{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            .hoverInfo{
+                button{
+                    background: #10344b;
+                    color: #E5F054;
+                }
+            }
+        }
+
+        .exp-grid-one:hover .hoverInfo{
+            background-color: #879F84;
+            button:hover{
+                background: #ab6e12;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .exp-grid-two:hover .hoverInfo{
+            background-color: #0A0F34;
+            color: #f8ad1a;
+            button:hover{
+                background: rgb(153, 97, 12);
+                transition: all 0.3s ease-in-out;
+            }
+            
+        }
+        .exp-grid-three:hover .hoverInfo{
+            background-color: white;
+            color: #001c54;
+            button:hover{
+                background: #001235;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .exp-grid-four:hover .hoverInfo{
+            background-color: #f96411;
+            button:hover{
+                background: #252321;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .exp-grid-five:hover .hoverInfo{
+            background-color: #0895bc;
+            color: #E5F054;
+            button:hover{
+                background: #0b283a;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
     /* flex-wrap for project containers */
     .reverse{
         flex-wrap: wrap-reverse;
@@ -126,7 +335,7 @@
         padding-top:5rem;
         display:grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
         font-size: 3rem;
         color: white;
         text-align: center;
@@ -158,13 +367,61 @@
             grid-row: 2/3;
             border-top: 1px solid #1e1e1e;
         }
+        .skill-seven{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            border-top: 1px solid #1e1e1e;
+        }
+        .skill-eight{
+            grid-column: 2/4 ;
+            grid-row: 3/4;
+            border-top: 1px solid #1e1e1e;
+            border-right: 1px solid #1e1e1e;
+            border-left: 1px solid #1e1e1e;
+        }
+        .skill-nine{
+            grid-column: 4/5;
+            grid-row: 3/4;
+            border-top: 1px solid #1e1e1e;
+        }
         p{
             padding:1.7rem;
         }
         p:hover{
             background: #0f0f0f;
             transition: all ease-in 0.3s;
-            
+        }
+        p:hover i{
+            transition: all ease-in 0.3s;
+        }
+        .skill-one:hover i{
+            color: #5CCFEE;
+        }
+        .skill-two:hover .fa-html5{
+            color: #E54C21;
+        }
+        .skill-two:hover .fa-css3-alt{
+            color: #1572B6;
+        }
+
+        .skill-three:hover i{
+            color: #C95C95;
+        }
+       
+        .skill-five:hover i{
+            color: #F7E018;
+        }
+        .skill-six:hover i{
+            color: #F05033;
+        }
+        .skill-seven:hover i{
+            color: #EB4A4B;
+        }
+        .skill-eight:hover i{
+            color: #4F5B93;
+        }
+        .skill-nine:hover i{
+            color: #CC3534;
         }
     }
 }

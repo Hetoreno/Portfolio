@@ -140,6 +140,13 @@ $short-header:4.2rem;
             .skill-four{
                 border-right:none;
             }
+            .skill-eight{
+                border-right: none;
+                border-bottom: 1px solid #1e1e1e;
+            }
+            .skill-nine{
+                border-right:1px solid #1e1e1e;
+            }
         }
     }
 
@@ -214,6 +221,10 @@ $short-header:4.2rem;
             }
             .skill-five{
                 border-right:none;
+            }
+            .skill-eight{
+                border-right:none;
+                border-left: none;
             }
         }
     }
