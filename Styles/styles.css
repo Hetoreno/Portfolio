@@ -1050,7 +1050,7 @@ footer {
     width: 100%;
     bottom: 0;
     height: 10rem;
-    z-index: 2;
+    z-index: 1;
   }
   .main-head .mobile-nav ul {
     display: -webkit-box;
@@ -1168,6 +1168,38 @@ footer {
         -ms-flex: 3 1 55rem;
             flex: 3 1 55rem;
   }
+  #portfolio .grid-experience {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    width: 90%;
+  }
+  #portfolio .grid-experience .exp-grid {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  #portfolio .grid-experience .exp-grid .modalContainer {
+    position: relative;
+    z-index: 5555;
+  }
+  #portfolio .grid-experience .exp-grid .modalContainer .close i {
+    bottom: 5% !important;
+    right: 8% !important;
+    font-size: 4rem;
+  }
+  #portfolio .grid-experience .exp-grid .modalContainer .modal {
+    -webkit-transform: inherit !important;
+            transform: inherit !important;
+    height: 100% !important;
+    width: 100% !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  #portfolio .grid-experience .exp-grid .modalContainer .modal .client-link {
+    width: 50% !important;
+    position: fixed;
+    bottom: 1%;
+  }
   #portfolio .grid-skills {
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -1213,6 +1245,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #about .about-container .about-img img {
+    height: 100% !important;
   }
   #contact {
     width: 90%;
