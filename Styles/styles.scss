@@ -91,6 +91,12 @@ $short-header:4.2rem;
                 width:50%;
             }
         }
+
+        .work-experience{
+            max-width: 500px;
+            padding: 35px 0px;
+        }
+
         .project-container{
             width:90%;
             min-height:70vh;
@@ -242,6 +248,10 @@ $short-header:4.2rem;
                 margin-top:2rem;
                 width:90%;
             }
+        }
+
+        .work-experience{
+            max-width: 270px;
         }
 
         .grid-skills{

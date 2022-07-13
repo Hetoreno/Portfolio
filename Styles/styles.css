@@ -1176,6 +1176,10 @@ footer {
   #portfolio header p {
     width: 50%;
   }
+  #portfolio .work-experience {
+    max-width: 500px;
+    padding: 35px 0px;
+  }
   #portfolio .project-container {
     width: 90%;
     min-height: 70vh;
@@ -1371,6 +1375,9 @@ footer {
   #portfolio header p {
     margin-top: 2rem;
     width: 90%;
+  }
+  #portfolio .work-experience {
+    max-width: 270px;
   }
   #portfolio .grid-skills {
     padding-top: 0rem;
