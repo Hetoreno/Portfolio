@@ -129,6 +129,7 @@ $short-header:4.2rem;
         .grid-experience{
             grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
             width: 90%;
+            grid-gap:2rem;
             .exp-grid{
                 grid-column: auto;
                 grid-row: auto;
@@ -201,7 +202,6 @@ $short-header:4.2rem;
 
     #contact{
         width:90%;
-        margin-top: 15rem;
     }
 
     footer{
@@ -271,6 +271,9 @@ $short-header:4.2rem;
             .skill-eight{
                 border-right:none;
                 border-left: none;
+            }
+            .skill-nine{
+                border-right: none ;
             }
         }
     }

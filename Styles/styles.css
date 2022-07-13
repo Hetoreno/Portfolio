@@ -1241,6 +1241,7 @@ footer {
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     width: 90%;
+    grid-gap: 2rem;
   }
   #portfolio .grid-experience .exp-grid {
     grid-column: auto;
@@ -1320,7 +1321,6 @@ footer {
   }
   #contact {
     width: 90%;
-    margin-top: 15rem;
   }
   footer p {
     margin-bottom: 9rem;
@@ -1402,6 +1402,9 @@ footer {
   #portfolio .grid-skills .skill-eight {
     border-right: none;
     border-left: none;
+  }
+  #portfolio .grid-skills .skill-nine {
+    border-right: none;
   }
   #about {
     padding-top: 15rem;
