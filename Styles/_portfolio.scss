@@ -21,6 +21,39 @@
         }
     }
 
+    .work-experience{
+        max-width: 700px;
+        margin: 0px auto;
+        padding: 100px 0px;
+        h3{
+            font-size: 3.5rem;
+            color: white;
+            a{
+                color: $blue-highlight;
+            }
+        }
+        p, ul li{
+            color:$gray-text;
+            font-size: 1.5rem;
+        }
+        ul{
+            margin-top: 3rem;
+            li{
+                list-style:inherit;
+                margin:2rem 0;
+            }
+        }
+    }
+
+    .work-arrow{
+        text-align: center;
+        i{
+            margin-top: 6rem;
+            font-size: 3rem;
+            color: #3ECAD3;
+        }
+    }
+
     //Experience Grid Section
     .grid-experience{
         width:70%;
@@ -58,7 +91,7 @@
                     cursor: pointer;
                 }
 
-
+                
 
                 .modalContainer{
                     background: rgba(0, 0, 0, 0.904);

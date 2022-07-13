@@ -226,6 +226,45 @@ a {
   border-bottom: 2px solid #3ECAD3;
 }
 
+#portfolio .work-experience {
+  max-width: 700px;
+  margin: 0px auto;
+  padding: 100px 0px;
+}
+
+#portfolio .work-experience h3 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+#portfolio .work-experience h3 a {
+  color: #3ECAD3;
+}
+
+#portfolio .work-experience p, #portfolio .work-experience ul li {
+  color: #a4a4a4;
+  font-size: 1.5rem;
+}
+
+#portfolio .work-experience ul {
+  margin-top: 3rem;
+}
+
+#portfolio .work-experience ul li {
+  list-style: inherit;
+  margin: 2rem 0;
+}
+
+#portfolio .work-arrow {
+  text-align: center;
+}
+
+#portfolio .work-arrow i {
+  margin-top: 6rem;
+  font-size: 3rem;
+  color: #3ECAD3;
+}
+
 #portfolio .grid-experience {
   width: 70%;
   margin: auto;
