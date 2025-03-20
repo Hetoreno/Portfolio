@@ -6,6 +6,7 @@
 }
 $blue-highlight: #3ECAD3;
 $gray-text:#a4a4a4;
+$dark-gray:#525252;
 $small-text:1.8rem;
 $text: 2.2rem;
 $topic-header:6rem;
@@ -210,7 +211,7 @@ $short-header:4.2rem;
     }
 }
 
-@media screen and(max-width:501px){
+@media screen and (max-width:501px){
     html{
         font-size: 45%;
     }
