@@ -4,7 +4,7 @@
     justify-content: $justify;
     flex-direction: $direction;
 }
-$blue-highlight: #3ECAD3;
+$blue-highlight: #1E8B90;
 $gray-text:#a4a4a4;
 $dark-gray:#525252;
 $small-text:1.8rem;
@@ -37,7 +37,7 @@ $short-header:4.2rem;
             visibility: hidden;
             position: fixed;
             @include flex(center,center,row);
-            background:$blue-highlight;
+            background: #121212;
             width:100%;
             bottom:0;
             height:10rem;
@@ -49,17 +49,18 @@ $short-header:4.2rem;
                 li{
                     height:100%;
                     width: 100%;
+                    
                     a{
                         @include flex(center,center,column);
                         font-size:2rem;
-                        font-weight:600;
-                        color:black;
+                        color:white;
                         height:100%;
                         width: 100%;
+                        border-right: rgb(65, 64, 64) 1px solid;
 
                     }
                     a:hover{
-                        background:#3af2ff;
+                        border:#3af2ff 4px solid;
                         transition: ease-in all 0.2s;
                     }
                 }
